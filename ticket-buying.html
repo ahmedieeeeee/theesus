@@ -7,17 +7,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <img src="https://i.imgur.com/6DJgqy4.png" alt="FoodDay Logo" class="logo">
-        <h1>Buy Tickets</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="login.html">Login/Register</a>
-            <a href="vendor-registration.html">Vendor Registration</a>
-            <a href="vendor-info.html">Vendor Info</a>
-            <a href="media.html">Media</a>
-        </nav>
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://i.imgur.com/6DJgqy4.png" alt="FoodDay Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Login/Register</a></li>
+                    <li><a href="vendor-register.html">Vendor Registration</a></li>
+                    <li><a href="vendor-info.html">Vendor Info</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="ticket-buying.html">Buy Tickets</a></li>
+                </ul>
+            </nav>
+            <div class="login-section">
+                <a href="login.html">Login</a>
+            </div>
+        </div>
     </header>
+
+    <!-- Ticket Section -->
     <section id="tickets">
         <h2>Select Ticket</h2>
         <form id="ticketForm">
@@ -47,5 +61,10 @@
             <button type="submit" class="cta-button">Purchase</button>
         </form>
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 FOODday. All rights reserved.</p>
+    </footer>
 </body>
 </html>
