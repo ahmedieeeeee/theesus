@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register as Vendor - FOODday</title>
+    <title>Vendor Registration - FoodDay</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
         <div class="header-content">
             <div class="logo">
                 <a href="index.html">
-                    <img src="https://i.imgur.com/6DJgqy4.png" alt="FoodDay Logo" style="height: 50px;">
+                    <img src="https://i.imgur.com/6DJgqy4.png" alt="FoodDay Logo">
                 </a>
             </div>
             <nav>
@@ -32,14 +32,15 @@
         </div>
     </header>
 
+    <!-- Vendor Registration Section -->
     <section id="vendor-register">
-        <h2>Register as Vendor</h2>
-        <form>
+        <h2>Vendor Registration</h2>
+        <form id="vendorRegistrationForm">
             <label for="vendor-name">Vendor Name:</label>
             <input type="text" id="vendor-name" name="vendor-name" required>
 
-            <label for="vendor-country">Country:</label>
-            <input type="text" id="vendor-country" name="vendor-country" required>
+            <label for="vendor-email">Email:</label>
+            <input type="email" id="vendor-email" name="vendor-email" required>
 
             <label for="vendor-password">Password:</label>
             <input type="password" id="vendor-password" name="vendor-password" required>
