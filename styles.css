@@ -330,139 +330,73 @@ section {
     min-height: 100vh; /* Each section will occupy at least the full viewport height */
     padding: 50px 20px; /* Add some padding for spacing */
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Buying</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://i.imgur.com/6DJgqy4.png" alt="FoodDay Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Login/Register</a></li>
+                    <li><a href="vendor-register.html">Vendor Registration</a></li>
+                    <li><a href="vendor-info.html">Vendor Info</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="ticket-buying.html">Buy Tickets</a></li>
+                </ul>
+            </nav>
+            <div class="login-section">
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </header>
 
-/* General body styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f3f3f3;
-}
+    <!-- Ticket Section -->
+    <section id="tickets">
+        <h2>Select Ticket</h2>
+        <form id="ticketForm">
+            <label for="ticketType">Ticket Type:</label>
+            <select id="ticketType" required>
+                <option value="regular">Regular - 1000 HUF</option>
+                <option value="early-bird">Early Bird - 1500 HUF</option>
+                <option value="bundle">Bundle (4 tickets) - 2000 HUF</option>
+            </select>
 
-/* Header */
-header {
-    background-color: #004d40;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
+            <h3>Payment Options</h3>
+            <div class="payment-options">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard" class="card-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" class="card-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Discover_Card_logo.svg" alt="Discover" class="card-logo">
+            </div>
 
-.header-content,
-nav {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" placeholder="Card Number" required>
+            
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="text" id="expiryDate" placeholder="MM/YY" required>
+            
+            <label for="cvv">CVV:</label>
+            <input type="password" id="cvv" placeholder="CVV" required>
 
-.logo {
-    height: 50px;
-}
+            <button type="submit" class="cta-button">Purchase</button>
+        </form>
+    </section>
 
-header h1 {
-    font-size: 24px;
-    margin: 0 10px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #ff9800;
-    transition: background-color 0.3s ease;
-}
-
-nav a:hover {
-    background-color: #ff6f61;
-}
-
-/* Ticket Buying Section */
-#tickets {
-    padding: 50px 20px;
-    background-color: #fff;
-    text-align: center;
-}
-
-#tickets h2 {
-    color: #ff6f61;
-    margin-bottom: 20px;
-    font-size: 32px;
-}
-
-#ticketForm {
-    max-width: 500px;
-    margin: 0 auto;
-    text-align: left;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-#ticketForm label {
-    display: block;
-    margin-top: 15px;
-    font-size: 16px;
-    color: #333;
-}
-
-#ticketForm select,
-#ticketForm input[type="text"],
-#ticketForm input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.cta-button {
-    background-color: #004d40;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 20px;
-    width: 100%;
-    text-align: center;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #00332d;
-}
-
-/* Payment Options */
-.payment-options {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.card-logo {
-    height: 40px;
-    width: auto;
-    max-width: 60px;
-}
-
-/* Footer */
-footer {
-    background-color: #004d40;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-section {
-    min-height: 100vh; /* Each section will occupy at least the full viewport height */
-    padding: 50px 20px; /* Add some padding for spacing */
-}
-
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 FOODday. All rights reserved.</p>
+    </footer>
+</body>
+</html>
