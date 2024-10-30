@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Buying</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="https://i.imgur.com/6DJgqy4.png" alt="FoodDay Logo" class="logo">
+        <h1>Buy Tickets</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login/Register</a>
+            <a href="vendor-registration.html">Vendor Registration</a>
+            <a href="vendor-info.html">Vendor Info</a>
+            <a href="media.html">Media</a>
+        </nav>
+    </header>
+    <section id="tickets">
+        <h2>Select Ticket</h2>
+        <form id="ticketForm">
+            <label for="ticketType">Ticket Type:</label>
+            <select id="ticketType" required>
+                <option value="regular">Regular - 1000 HUF</option>
+                <option value="early-bird">Early Bird - 1500 HUF</option>
+                <option value="bundle">Bundle (4 tickets) - 2000 HUF</option>
+            </select>
+
+            <h3>Payment Options</h3>
+            <div class="payment-options">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard" class="card-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" class="card-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Discover_Card_logo.svg" alt="Discover" class="card-logo">
+            </div>
+
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" placeholder="Card Number" required>
+            
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="text" id="expiryDate" placeholder="MM/YY" required>
+            
+            <label for="cvv">CVV:</label>
+            <input type="password" id="cvv" placeholder="CVV" required>
+
+            <button type="submit" class="cta-button">Purchase</button>
+        </form>
+    </section>
+</body>
+</html>
