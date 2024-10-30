@@ -1,0 +1,332 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+}
+
+/* Header */
+header {
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; /* Adjusted for consistent styling */
+}
+
+/* Center Navigation and Links */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ff6f61;
+}
+
+/* Login and Vendor Register Button */
+.login-section {
+    display: flex;
+    gap: 10px;
+}
+
+.login-section a {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.login-section a:hover {
+    background-color: #ff6f61;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #ff6f61;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* Ticket Purchase Section */
+.ticket-purchase {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.ticket-container {
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-container h2 {
+    color: #004d40;
+    margin-bottom: 20px;
+}
+
+.ticket-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.ticket-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.ticket-container button {
+    background-color: #004d40;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.ticket-container button:hover {
+    background-color: #00332d;
+}
+
+/* About Section */
+#about {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#about h2 {
+    color: #ff6f61;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Register Section */
+#register {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#register h2 {
+    color: #004d40;
+    margin-bottom: 30px;
+}
+
+#register form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#register label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 16px;
+}
+
+#register input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#register button {
+    background-color: #004d40;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#register button:hover {
+    background-color: #00332d;
+}
+
+/* Vendor Registration Section */
+#vendor-register {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#vendor-register h2 {
+    color: #004d40;
+    margin-bottom: 20px;
+}
+
+#vendor-register label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 16px;
+}
+
+#vendor-register input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#vendor-register button {
+    background-color: #004d40;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#vendor-register button:hover {
+    background-color: #00332d;
+}
+
+/* Vendor Info Section */
+#vendor-info {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#vendor-info h2 {
+    color: #ff6f61;
+    margin-bottom: 20px;
+}
+
+#vendor-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#vendor-info ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Login Section */
+#login {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#login h2 {
+    color: #004d40;
+    margin-bottom: 20px;
+}
+
+#login form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#login label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 16px;
+}
+
+#login input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#login button {
+    background-color: #004d40;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#login button:hover {
+    background-color: #00332d;
+}
+
+/* Footer */
+footer {
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+section {
+    min-height: 100vh; /* Each section will occupy at least the full viewport height */
+    padding: 50px 20px; /* Add some padding for spacing */
+}
