@@ -23,9 +23,9 @@ header {
 }
 
 .logo {
-    height: 100px; /* Adjust this value as needed */
+    height: 200px; /* Adjust this value as needed */
     width: auto;   /* Keeps the aspect ratio intact */
-    max-width: 100px; /* Optional: prevent logo from getting too big */
+    max-width: 150px; /* Optional: prevent logo from getting too big */
 }
 
 /* Center Navigation and Links */
