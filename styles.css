@@ -22,10 +22,10 @@ header {
     align-items: center;
 }
 
-.logo {
-    height: 200px; /* Adjust this value as needed */
-    width: auto;   /* Keeps the aspect ratio intact */
-    max-width: 150px; /* Optional: prevent logo from getting too big */
+.logo img {
+    height: 50px; /* Set consistent logo height */
+    width: auto;  /* Keeps the aspect ratio intact */
+    max-width: 150px; /* Prevents the logo from becoming too large */
 }
 
 /* Center Navigation and Links */
