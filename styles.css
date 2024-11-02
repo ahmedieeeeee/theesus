@@ -90,7 +90,25 @@ nav ul li a:hover {
     margin: 10px 0;
 }
 
-/* Updates Section */
+/* Hero Section */
+.hero {
+    background-color: #ff6f61;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* Updates Section - main container styling */
 #updates {
     padding: 50px 20px;
     background-color: #f9f9f9;
@@ -107,6 +125,7 @@ nav ul li a:hover {
     max-width: 800px;
     margin: 0 auto;
     text-align: left;
+    position: relative;
 }
 
 .update-item {
@@ -116,6 +135,7 @@ nav ul li a:hover {
     border-radius: 8px;
     margin-bottom: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: none;
 }
 
 .update-item h3 {
@@ -134,6 +154,31 @@ nav ul li a:hover {
     color: #777;
     margin-top: 10px;
 }
+
+/* Pagination Controls */
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pagination button {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+    background-color: #ff6f61;
+}
+
+/* Continue with Ticket Purchase, About, Register, and other sections... */
+
 
 /* Ticket Purchase Section */
 .ticket-purchase {
